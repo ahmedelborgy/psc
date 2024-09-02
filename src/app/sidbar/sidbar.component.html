@@ -1,0 +1,36 @@
+
+
+
+<aside class="sidebar" [class]="lang == 'en' ? 'sidbarEN' : 'sidbarER'"
+       [ngClass]="lang == 'en' ? {'hiddenEn': !isSidebarVisible} : {'hidden': !isSidebarVisible}">
+  <!-- Sidebar content -->
+  <div id="toggle-button" class="toggle-btn toggle-btnER" [class]="lang=='en'?'toggle-btnEn':'toggle-btnER'" 
+       (click)="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </div>
+ 
+  <nav class="nav-menu">
+    <ul>
+      <li class="mb-5 ">
+
+        <section class="logo">
+          <img src="../../assets/image/logo.png">
+        </section>
+      </li>
+      
+      <li class="mt-5  "><a href="#"><i class="fa fa-home "></i> {{ 'sidebar.home' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-list-alt"></i> {{ 'sidebar.plans' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-tasks"></i> {{ 'sidebar.processes' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-chart-bar"></i> {{ 'sidebar.businessImpactAnalysis' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-exclamation-triangle"></i> {{ 'sidebar.risks' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-building"></i> {{ 'sidebar.organizationData' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-users"></i> {{ 'sidebar.users' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-file-alt"></i> {{ 'sidebar.reports' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-lightbulb"></i> {{ 'sidebar.guidelines' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-graduation-cap"></i> {{ 'sidebar.awarenessAndTraining' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-bell"></i> {{ 'sidebar.notifications' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-tasks"></i> {{ 'sidebar.taskManagement' | translate }}</a></li>
+      <li><a href="#"><i class="fa fa-cog"></i> {{ 'sidebar.settings' | translate }}</a></li>
+    </ul>
+  </nav>
+</aside>

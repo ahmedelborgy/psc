@@ -1,0 +1,218 @@
+.process-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .icon i {
+    font-size: 40px;
+    color: #5a0c79;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .step-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5a0c79;
+  }
+  
+  .connector {
+    width: 100px;
+    height: 2px;
+    background-color: #5a0c79;
+    position: relative;
+  }
+  .connector::after{
+    content: "";
+    background-color: #5a0c79;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+
+  .connector::before{
+    content: "";
+    background-color: #5a0c79;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+//   =========================
+
+//   =====================
+.approval-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    h2 {
+      text-align: right;
+      color: #5a0c79;
+    }
+  
+    p {
+      text-align: right;
+      color: #333;
+    }
+    .fomrming{
+ display: flex;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+     width:50%;
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #5a0c79;
+        width: 100%;
+      }
+  
+      .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+  
+        &:focus {
+          border-color: #5a0c79;
+          outline: none;
+        }
+      }
+  
+      select.form-control {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url('data:image/svg+xml;base64,...') no-repeat 95% center;
+        background-size: 15px;
+      }
+    }
+  
+    .form-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+  
+      .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+  
+        &.btn-primary {
+          background-color: #5a0c79;
+          color: #fff;
+          border: none;
+          &:hover {
+            background-color: #4e095f;
+          }
+        }
+  
+        &.btn-secondary {
+          background-color: transparent;
+          color: #5a0c79;
+          border: 1px solid #5a0c79;
+  
+          &:hover {
+            background-color: #f5f5f5;
+          }
+        }
+  
+        &.btn-danger {
+          background-color: #ff4c4c;
+          color: #fff;
+          border: none;
+  
+          &:hover {
+            background-color: #e04242;
+          }
+        }
+      }
+    }
+  
+    
+  }
+  
+//   ==============
+
+
+
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .process-container {
+      flex-direction: column;
+    }
+  
+    .form-group {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mx{
+      width:100%;
+    }
+    .process-container {
+      flex-direction: column;
+    }
+    .fomrming{
+    flex-direction: column;
+    width: 100%;
+    }
+    .form-group {
+      width: 100% !important;
+      // background-color: yellow;
+    
+    }
+    .approval-form {
+
+    .form-actions {
+
+      &.btn-primary {
+        background-color: #5a0c79;
+        color: #fff;
+        border: none;
+        width:100%;
+        &:hover {
+          background-color: #4e095f;
+        }
+      }
+    }
+
+    }
+    .form-actions {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  .swal2-icon-show {
+    background-color: #5a0c79 !important; /* Red color for the icon background */
+  }
+  

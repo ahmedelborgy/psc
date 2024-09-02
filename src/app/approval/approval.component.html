@@ -1,0 +1,103 @@
+
+
+   <!-- ------------------------------------------------- -->
+
+
+   <div class="process-container">
+    <div class="process-step ">
+      <div class="icon ">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <p class="step-title">{{ 'processSteps.step1' | translate }}</p>
+    </div>
+  
+    <div class="connector "></div>
+  
+    <div class="process-step">
+      <div class="icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <p class="step-title">{{ 'processSteps.step2' | translate }}</p>
+    </div>
+  
+    <div class="connector"></div>
+  
+    <div class="process-step">
+      <div class="icon">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <p class="step-title">{{ 'processSteps.step3' | translate }}</p>
+    </div>
+  </div>
+  
+  <!-- ========================== -->
+  
+  <div class="approval-form"> 
+      <div class=" w-50 ">
+    <h2  [class]="lang=='en'?'text-start':'text-end'">{{ 'approvalForm.title' | translate }}</h2>
+    <p [class]="lang=='en'?'text-start':'text-end'">{{ 'approvalForm.description' | translate }}</p>
+  </div>
+    <form [formGroup]="approvalForm" (ngSubmit)="onSubmit()">
+      <section class="fomrming ">
+        <div class="form-group m-2">
+          <label for="alignment">{{ 'approvalForm.alignment' | translate }}</label>
+          <select id="alignment" formControlName="alignment" class="form-control">
+            <option value="" disabled selected>{{ 'approvalForm.placeholders.select' | translate }}</option>
+            <option value="alignment1">{{ 'approvalForm.placeholders.alignment1' | translate }}</option>
+            <option value="alignment2">{{ 'approvalForm.placeholders.alignment2' | translate }}</option>
+          </select>
+        </div>
+  
+        <div class="form-group m-2">
+          <label for="project">{{ 'approvalForm.project' | translate }}</label>
+          <select id="project" formControlName="project" class="form-control">
+            <option value="" disabled selected>{{ 'approvalForm.placeholders.select' | translate }}</option>
+            <option value="project1">{{ 'approvalForm.placeholders.project1' | translate }}</option>
+            <option value="project2">{{ 'approvalForm.placeholders.project2' | translate }}</option>
+          </select>
+        </div>
+      </section>
+  
+      <section class="d-flex">
+        <div class="form-group m-2">
+          <label for="approval-type">{{ 'approvalForm.approvalType' | translate }}</label>
+          <select id="approval-type" formControlName="approvalType" class="form-control">
+            <option value="" disabled selected>{{ 'approvalForm.placeholders.select' | translate }}</option>
+            <option value="approval1">{{ 'approvalForm.placeholders.approval1' | translate }}</option>
+            <option value="approval2">{{ 'approvalForm.placeholders.approval2' | translate }}</option>
+          </select>
+        </div>
+  
+        <div class="form-group m-2">
+          <label for="status">{{ 'approvalForm.status' | translate }}</label>
+          <select id="status" formControlName="status" class="form-control">
+            <option value="" disabled selected>{{ 'approvalForm.placeholders.select' | translate }}</option>
+            <option value="status1">{{ 'approvalForm.placeholders.status1' | translate }}</option>
+            <option value="status2">{{ 'approvalForm.placeholders.status2' | translate }}</option>
+          </select>
+        </div>
+      </section>
+  
+      <section class="d-flex w-50">
+        <div class="form-group m-2">
+          <label for="submission-date">{{ 'approvalForm.submissionDate' | translate }}</label>
+          <input type="date" id="submission-date" formControlName="submissionDate" class="form-control">
+        </div>
+  
+        <div class="form-group m-2">
+          <label for="review-date">{{ 'approvalForm.reviewDate' | translate }}</label>
+          <input type="date" id="review-date" formControlName="reviewDate" class="form-control">
+        </div>
+      </section>
+  
+      <div class="form-actions my-2">
+        <button [class]="lang=='en'?'me-auto':'ms-auto'"
+         type="submit"(click)="alertWithSuccess()" class="mx btn btn-primary ">{{ 'approvalForm.actions.save' | translate }}</button>
+        <button type="button" class="btn btn-secondary" (click)="simpleAlert()">{{ 'approvalForm.actions.saveDraft' | translate }}</button>
+        <button type="button"(click)="confirmBox()" class="btn btn-danger">{{ 'approvalForm.actions.cancel' | translate }}</button>
+      </div>
+    </form>
+  </div>
+  
+
+

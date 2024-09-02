@@ -1,0 +1,83 @@
+
+
+
+  
+
+
+
+{
+  "sidebar": {
+    "home": "Home",
+    "plans": "Plans",
+    "processes": "Processes",
+    "businessImpactAnalysis": "Business Impact Analysis",
+    "risks": "Risks",
+    "organizationData": "Organization Data",
+    "users": "Users",
+    "reports": "Reports",
+    "guidelines": "Guidelines",
+    "awarenessAndTraining": "Awareness and Training",
+    "notifications": "Notifications",
+    "taskManagement": "Task Management",
+    "settings": "Settings"
+  },
+  "processSteps": {
+    "step1": "Employee Analysis Approval",
+    "step2": "Maintain Criteria for Business Impact Analysis",
+    "step3": "Review Business Impact Analysis Details"
+  },
+  "approvalForm": {
+    "title": "Approval Form",
+    "description": "Please fill out the necessary details for the approval process.",
+    "alignment": "Alignment",
+    "project": "Project",
+    "approvalType": "Approval Type",
+    "status": "Current Status",
+    "submissionDate": "Submission Date",
+    "reviewDate": "Review Date",
+    "actions": {
+      "save": "Save",
+      "saveDraft": "Save as Draft",
+      "cancel": "Cancel"
+    },
+    "placeholders": {
+      "select": "Please Select",
+      "alignment1": "First Alignment",
+      "alignment2": "Second Alignment",
+      "project1": "First Project",
+      "project2": "Second Project",
+      "approval1": "First Approval Type",
+      "approval2": "Second Approval Type",
+      "status1": "Initial Status",
+      "status2": "Final Status"
+    },
+    "tooltips": {
+      "alignment": "Select the appropriate alignment for this approval.",
+      "project": "Choose the relevant project from the list.",
+      "approvalType": "Specify the type of approval required.",
+      "status": "Indicate the current status of the approval process.",
+      "submissionDate": "Select the date when this submission was made.",
+      "reviewDate": "Choose the date for the next review."
+    }
+  },
+  "alerts": {
+    "simpleAlert": {
+      "title": "Save as Draft"
+    },
+    "alertWithSuccess": {
+      "title": "Thank you!",
+      "text": "Your submission was successful."
+    },
+    "confirmBox": {
+      "title": "Are you sure you want to cancel?",
+      "text": "You will not be able to recover this file once deleted.",
+      "confirmButtonText": "Yes, cancel it",
+      "cancelButtonText": "No, keep it",
+      "successTitle": "Cancelled",
+      "successText": "Your request has been cancelled.",
+      "cancelTitle": "Action Cancelled",
+      "cancelText": "No changes were made."
+    }
+  }
+}
+

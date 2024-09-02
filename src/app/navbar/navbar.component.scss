@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Left Section */
+  .navbar-left .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar-left .dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-left .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 0;
+  }
+  
+  .navbar-left .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar-left .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .navbar-left .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Center Section */
+  .navbar-center {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  .alert {
+    color: #5a0c79;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .alert i {
+    margin-left: 10px; /* المسافة بين الأيقونة والنص */
+    font-size: 20px;
+  }
+  
+  /* Right Section */
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
+  }
+  
+  .search-container input {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .search-container .search-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,74 @@
+
+
+
+
+
+
+  {
+    "sidebar": {
+      "home": "الرئيسية",
+      "plans": "الخطط",
+      "processes": "العمليات",
+      "businessImpactAnalysis": "تحليل الأثر للأعمال",
+      "risks": "المخاطر",
+      "organizationData": "بيانات المؤسسة",
+      "users": "المستخدمين",
+      "reports": "التقارير",
+      "guidelines": "الإرشادات",
+      "awarenessAndTraining": "التوعية والتدريب",
+      "notifications": "الإبلاغات",
+      "taskManagement": "إدارة المهام",
+      "settings": "الإعدادات"
+    },
+    "processSteps": {
+      "step1": "الموافقة على تحليل الموظف",
+      "step2": "معايير الصيانة لتحليل الأثر للأعمال",
+      "step3": "تفاصيل تحليل الأثر للأعمال"
+    },
+    "approvalForm": {
+      "title": "استمارة الموافقة",
+      "description": "قم بإدخال تفاصيل استمارة الموافقة",
+      "alignment": "التوافق",
+      "project": "المشروع",
+      "approvalType": "نوع الموافقة",
+      "status": "الحالة",
+      "submissionDate": "تاريخ المراجعة القادم",
+      "reviewDate": "تاريخ المراجعة الحالي",
+      "actions": {
+        "save": "حفظ",
+        "saveDraft": "حفظ كمسودة",
+        "cancel": "إلغاء"
+      },
+      "placeholders": {
+        "select": "اختر",
+        "alignment1": "توافق 1",
+        "alignment2": "توافق 2",
+        "project1": "مشروع 1",
+        "project2": "مشروع 2",
+        "approval1": "موافقة 1",
+        "approval2": "موافقة 2",
+        "status1": "حالة 1",
+        "status2": "حالة 2"
+      }
+    },
+    "alerts": {
+      "simpleAlert": {
+        "title": " حفظ كمسوده!"
+      },
+      "alertWithSuccess": {
+        "title": "شكراً...",
+        "text": "تم الإرسال بنجاح!"
+      },
+      "confirmBox": {
+        "title": "هل أنت متأكد أنك تريد الإلغاء؟",
+        "text": "لن تتمكن من استعادة هذا الملف!",
+        "confirmButtonText": "نعم، قم بالإلغاء!",
+        "cancelButtonText": "لا، احتفظ به",
+        "successTitle": "تم الإلغاء!",
+        "successText": "تم إلغاء ملفك الوهمي بنجاح.",
+        "cancelTitle": "تم الإلغاء",
+        "cancelText": "ملفك الوهمي آمن :)"
+      }
+    }
+  }
+  
